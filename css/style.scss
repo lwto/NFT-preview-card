@@ -104,8 +104,34 @@ body {
     color: white;
     border-radius: 10px;
     .img {
-        img {
+        position: relative;
+        .main_img {
             border-radius: 5px;
+        }
+        .layer {
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+        .layer:hover {
+            background: rgba(4, 255, 238, 0.5);
+        }
+        .layer img {
+            width: 15%;
+            color: white;
+            top: 43%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .layer:hover img {
+            opacity: 1;
         }
     }
     p {
