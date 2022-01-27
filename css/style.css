@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -81,6 +82,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Outfit', sans-serif;
 }
 
 .card {
